@@ -1,0 +1,142 @@
+<html>
+<head>
+<title>Krisps Bakery</title>
+<style>
+body {
+ /* non-obvious warm gradient pattern */
+ background: radial-gradient(circle at top left, #ffdd57, #ff914d, #ff6a00);
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+}
+
+h1 {
+ color: #5a2a00;
+ text-align: center;
+ margin-top: 20px;
+}
+
+.section {
+ margin: 20px auto;
+ width: 80%;
+ background: #fff1c1; /* solid contrasting warm div */
+ padding: 20px;
+ border: 3px solid #e67e22;
+ border-radius: 10px;
+ box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.image-row {
+ display: flex;
+ justify-content: center;
+ gap: 25px;
+ flex-wrap: wrap;
+}
+
+img {
+ width: 200px;
+ height: auto;
+ border-radius: 6px;
+ border: 3px solid #ff9f1c;
+}
+
+table {
+ width: 100%;
+ border-collapse: collapse;
+ background: #fff6db; /* readable table background */
+}
+
+table, th, td {
+ border: 2px solid #d35400;
+}
+
+th, td {
+ padding: 8px;
+ text-align: left;
+ color: #5a2a00;
+}
+
+button {
+ background: #d35400;
+ color: white;
+ border: none;
+ padding: 10px 14px;
+ border-radius: 6px;
+ cursor: pointer;
+ font-size: 15px;
+}
+
+button:hover {
+ background: #a84300;
+}
+
+.item {
+ border: 2px dashed #d35400;
+ padding: 12px;
+ margin-top: 10px;
+ border-radius: 6px;
+ background: #ffe9a8; /* contrasting inner box */
+ color: #5a2a00;
+ font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<h1>Krisps Bakery</h1>
+
+<div class="section">
+<p>Welcome to Krisps Bakery — freshly baked every day!</p>
+</div>
+
+<div class="section image-row">
+<img src="bread.jpg" alt="Bread">
+<img src="cake.jpg" alt="Cake">
+<img src="croissant.jpg" alt="Croissant">
+</div>
+
+<div class="section">
+<ul>
+ <li>Breads</li>
+ <li>Cakes</li>
+ <li>Croissants</li>
+ <li>Pastries</li>
+</ul>
+</div>
+
+<div class="section">
+<table>
+<tr><th>Item</th><th>Price</th></tr>
+<tr><td>Bread</td><td>₹50</td></tr>
+<tr><td>Cake Slice</td><td>₹80</td></tr>
+<tr><td>Croissant</td><td>₹60</td></tr>
+</table>
+</div>
+
+<div class="section">
+<div class="item">Fresh bread delivered daily!</div>
+<p><span style="color:#8f4600;">Limited Stock:</span> grab your favorite treats early!</p>
+</div>
+
+<div class="section">
+<form>
+ Name: <input type="text"><br><br>
+ Item: 
+ <select>
+  <option>Bread</option>
+  <option>Cake</option>
+  <option>Croissant</option>
+ </select><br><br>
+ Quantity: <input type="number"><br><br>
+ <button type="submit">Order</button>
+</form>
+</div>
+
+<div class="section">
+<p><b>Contact Us:</b></p>
+<p>Phone: xxxxxxxxxx</p>
+<p>Email: x@gmail.com</p>
+</div>
+
+</body>
+</html>
